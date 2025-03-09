@@ -11,9 +11,7 @@ const cardsSlice = createSlice({
       return state.filter((card) => card.id !== action.payload);
     },
     updateCard: (state, action) => {
-      return state.map((card) =>
-        card.id === action.payload.id ? action.payload : card
-      );
+      return state.map((card) => (card.id === action.payload.id ? action.payload : card));
     },
   },
 });
