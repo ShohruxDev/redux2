@@ -1,8 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { deleteCard, updateCard } from "./store";
 import { useState } from "react";
-
-const CardList = () => {
+const Cardlist = () => {
   const cards = useSelector((state) => state.cards);
   const dispatch = useDispatch();
   const [editData, setEditData] = useState(null);
@@ -45,4 +44,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export default Cardlist;
