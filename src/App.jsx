@@ -1,13 +1,13 @@
 import { Provider } from "react-redux";
 import { store } from "./store";
 import FormComponent from "./FormComponent";
-import Cardlist from "./CardList";
+import CardList from "./CardList";
 
 const App = () => {
   return (
     <Provider store={store}>
       <FormComponent />
-      <Cardlist    />
+      <CardList    />
     </Provider>
   );
 };
